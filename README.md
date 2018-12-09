@@ -9,3 +9,4 @@ git config --global user.name "***"
 git config --global user.email "***"
 git config --global user.password "***"
 git push -u origin master
+git config --global credential.helper store
