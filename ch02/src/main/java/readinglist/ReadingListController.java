@@ -49,14 +49,13 @@ public class ReadingListController {
 			}
 		}
 		logger.info(Arrays.deepToString(urlList.toArray()));
-		return urlList;
+		return urlList; //kyms
 	}
 
 	@RequestMapping(method=RequestMethod.GET)
 	public String readersBooks(Model model) {
 		logger.info("reading list ....");
 		List<Book> readingList = readingListRepository.findByReader(reader);
-		logger.info("reading list 2....");
 		if (readingList != null) {
 			model.addAttribute("books", readingList);
 		}
