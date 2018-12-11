@@ -49,7 +49,7 @@ public class ReadingListController {
 			}
 		}
 		logger.info(Arrays.deepToString(urlList.toArray()));
-		return urlList; //kym
+		return urlList; //kym ich liebe dich
 	}
 
 	@RequestMapping(method=RequestMethod.GET)
